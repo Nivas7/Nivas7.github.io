@@ -1,0 +1,14 @@
+<nav>
+	<div class="header mono">
+		<h1><a class="link-inactive" href="/">Nivaz's blog</a></h1>
+
+		{% assign stripurl = page.url | remove: '.html' %}
+		{% for item in site.data.navigation %}
+		<a href="{{ item.link }}"
+			{% if item.ext %} target=_blank {% endif %}
+			{% if page.url == item.link or stripurl == item.link %} class="link-inactive" {% endif %}>
+			{{ item.name }}
+		</a>
+		{% endfor %}
+		</div>
+</nav>

@@ -1,0 +1,22 @@
+---
+layout: default
+title: blog
+---
+
+<h2>blog posts:</h2>
+
+<a class="noline" href="{{ './topics.html' | relative_url }}">[ view by topic ]</a>
+
+<ul class="narrow">
+  {% for post in site.categories.blog %}
+  <!-- default category -->
+    <li>
+      <h2><a class="noline mono" href="{{ post.url }}">{{ post.title | downcase }}</a></h2>
+      {{ post.excerpt }}
+      <hr>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="right"> this blog uses <a class="noline" target="_blank" href="https://jekyllrb.com/">jekyll</a></div>
+

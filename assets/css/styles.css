@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	color: #ececec;
+	background-color: #222831;
+	padding-bottom: 200px;
+	font-size: 16px;
+	/* font-family: 'Roboto Mono', monospace; */
+	font-family: 'Mulish';
+}
+
+.container{
+	max-width: 900px;
+	margin: auto;
+}
+
+a {color: #f2a365; }
+.link-inactive, .link-inactive:hover { color: #ececec; text-decoration: none; }
+.noline { text-decoration: none;}
+.line { text-decoration: underline; }
+
+.yellow {color: #f2a365; }
+
+a:hover {color: lightblue; }
+
+.mono {
+	font-family: 'Roboto Mono';
+}
+
+.center {
+	text-align: center;
+}
+
+/* css for the header */
+h1{
+	margin-right: auto;
+	font-size: 1.8rem;
+}
+
+h2{
+	margin: 10px 0px;
+	padding: 8px 0;
+	font-family: 'Roboto Mono';
+}
+
+pre.highlight{
+	background-color: #393e46;
+
+	display: block;
+	padding: 8px;
+	/* color: #c2c2c2; */
+	border-radius: 5px;
+	/* border: .5px #c2c2c2 solid; */
+	/* font-size: 16px; */
+	overflow-x: auto;
+}
+
+.language-plaintext {
+	color: #f2a365;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.header a {
+	align-self: center;
+	padding: 1rem;
+	margin-left: 2rem;
+}
+/* end of header css */
+
+.entry {
+	padding: 10px 10px 10px 10px;
+}
+
+.small{
+	font-size: 0.5rem !important;
+}
+
+p{
+	font-size: 17px;
+	line-height: 1.6;
+	color: rgb(184, 184, 184);
+}
+
+.subtext{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: .8px;
+	color: #aaa;
+	margin-bottom: 2rem;
+}
+
+.kinda-red{
+	color: #ff8080;
+}
+
+.entry h2 {
+	font-size: 1.9rem;
+	margin: 2px auto 10px auto;
+}
+
+.entry h3{
+	font-size: 1.4rem;
+}
+
+.entry h4{
+	font-size: 1.2rem;
+}
+
+.entry code{
+	font-size: 17px;
+}
+
+li{
+	padding-bottom: 4px;
+	line-height: 1.5;
+}
+
+li::marker{
+	color: #ff8080;
+}
+
+ul.narrow {
+	padding-top: 8px;
+}
+
+ul.narrow > li > h2 {
+	margin-bottom: 0;
+}
+
+ul.narrow > li > p {
+	margin-top: 4px;
+}
+
+ul, ol{
+	padding-bottom: 4px;
+	color: rgb(184, 184, 184);
+}
+
+.bimg{
+	margin: auto;
+	padding: 1rem;
+	padding-bottom: .2rem;
+}
+
+img{
+	padding-top: 0.2rem;
+}
+
+.right{
+	text-align: center;
+	margin: 1rem;
+}
+
+.credit{
+	margin-left:auto;
+	margin-right:auto;
+	font-size: .9rem;
+	text-align: center;
+	font-style: italic;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.book-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	grid-gap: 20px 50px;
+}
+
+.book-item{
+	display: grid;
+	grid-template-rows: 320px auto;
+	align-items: center;
+}
+
+.book-item img {
+    margin: 0 auto;
+}
+
+.eop {
+	font-family: 'Roboto Mono';
+	text-align: center;
+	font-size: .8rem;
+	color: #b8997d;
+}
+
+blockquote{
+	background-color: #a5a5a5;
+	padding: 1rem;
+	border-radius: 0px 4px 4px 0px;
+	border-left: 10px solid #393e46;
+}
+
+blockquote p{
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish';
+	font-size: 14px !important;
+	color: #2e2e2e;
+}
+
+blockquote .language-plaintext {
+	color:rgb(196, 74, 74) !important;
+}
+
+blockquote a{
+	color: #d11956;
+}
+
+blockquote li {
+	font-size: 14px !important;
+	color: #2e2e2e;
+}
+
+hr{
+	margin-top: 2.5rem;
+	border: none;
+	border-top: .3px solid #545961;
+}
+
+.two-col{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.two-col div img {
+	width: 350px;
+}
+
+.two-col .caption{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: .9rem;
+	color:rgb(202, 105, 105);
+}
+
+li p {
+	margin: 12px 0;
+}
+
+pre.highlight {
+	margin: 12px 0;
+}
+
+/* csss for the chessboardjs board */
+.chessboard {
+	margin: 0.5rem auto;
+	width: 400px;
+	/* text-align: center; */ /* commenting fixes the extra padding-left in the spare pieces */
+}
+
+.chessbox {
+	margin: 1.2rem 0;
+}
+
+.caption {
+	text-align: center;
+	font-style: italic;
+	font-size: .8rem;
+}
+
+/* for small screens*/
+@media screen and (max-width: 600px) {
+	.time-ago{
+		display: none;
+	}
+	html{
+		margin-top: 0rem;
+	}
+
+	/* header css */
+	.header{
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.header a{
+		align-self: flex-start;
+		margin: 0;
+		padding: 0;
+		padding-left: .5rem;
+		padding-bottom: .5rem;
+	}
+
+	h1{
+		font-size: 1.5rem;
+	}
+
+	h2{
+		font-size: 1.3rem;
+	}
+
+	ul, ol{
+		font-size: 0.9rem;
+	}
+
+	.entry{
+		/* border-left: 5px solid #696769;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		border-radius: 0 8px 8px 0;
+		padding: 12px; */
+	}
+
+	.small{
+		font-size: .8rem !important;
+	}
+
+	/* para outside entry posts */
+	p{
+		font-size: 0.9rem;
+		padding-left: .3rem;
+	}
+
+	.entry code{
+		font-size: 0.9rem !important;
+	}
+
+	/* para inside entries */
+	.entry p{
+		font-size: 0.9rem;
+	}
+
+	.entry h2 { font-size: 1.36rem; }
+
+	.flex-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	pre.highlight{
+		font-size: 0.9rem;
+	}
+
+	ul.narrow{
+		padding-right: 10px;
+		padding-left: 20px;
+	}
+
+	.book-container{
+		display: block;
+	}
+
+	.book-item{
+		justify-content: center;
+        margin-bottom: 10px;
+	}
+
+	.chessboard {
+		margin: 0rem auto;
+		width: min(100%, 400px) !important; /* dynamic resizing works in the chess library, just requires a page reload */
+	}
+}
+
+/* only for about page */
+
+#trigger{
+	display: none;
+}
+
+#trigger:checked + span:after {
+	display: inline;
+	content:'pritom.gogoi101@gmail.com';
+}
+
+#trigger:checked ~ label {
+	display: none;
+}
+
+.cursor{
+	cursor: pointer;
+}

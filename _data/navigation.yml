@@ -1,0 +1,14 @@
+- name: home
+  link: /
+- name: blog
+  link: /blog
+- name: random
+  link: /random
+- name: contact
+  link: /contact
+- name: /t
+  link: https://twitter.com/Srinivas124
+  ext: true
+- name: /g
+  link: https://github.com/Nivas7
+  ext: true

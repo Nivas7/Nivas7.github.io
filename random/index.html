@@ -1,0 +1,18 @@
+---
+layout: default
+title: random
+---
+
+<h2>random posts:</h2>
+
+<ul class="narrow">
+  {% for post in site.categories.random %}
+  <!-- default category -->
+    <li>
+      <h2><a class="noline" href="{{ post.url }}">{{ post.title | downcase }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="right"> this blog uses <a class="noline" target="_blank" href="https://jekyllrb.com/">jekyll</a></div>
