@@ -1,15 +1,3 @@
-- name: Probabilistic Machine Learning - Kevin P. Murphy
-  img: probml.png
+- name: Breif History of Time - Stephen Hawking
+  img: breif_history_of_time.png
   tag: active
-
-- name: Calculus - L. Tarasov
-  img: calculus.jpg
-  tag: active
-
-- name: The Republic - Plato
-  img: the-republic.jpg
-  tag: ab
-
-- name: Layered Money
-  img: layered-money.jpg
-  tag: ab
