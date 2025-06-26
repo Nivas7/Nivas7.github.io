@@ -24,10 +24,6 @@ this repo contains the code for my [blog][1], it uses jekyll for generating stat
 
 You can easily deploy a jekyll site such as this one at github pages by following [these instructions][4]. Another way is to push this folder to a github repo and then use services such as [netlify](https://netlify.com) that allows concurrent building i.e., everytime you push changes to the github repo, netlify rebuilds your site by following your build instructions and then hosts your subsequently generated static pages.
 
-## Optional: `jemdoc` resume
-
-I also host a jemdoc resume page at [`rustyelectron.live/resume`](https://rustyelectron.live/resume/). See [jemdoc][5]'s page for instructions to learn to prepare a jemdoc site.
-
 ### steps to host
 
 Follow these instructions to host your jemdoc page at `yourblog.com/<path>`.
@@ -68,11 +64,4 @@ clean :
 
 > `jemdoc` is quite old and in modern web, it has its shortcomings. I have future plans to rewrite jemdoc in python 3 and update it to use html5.
 
-## Change log:
-* as of Nov 2021, the blog post page theme is based on [this blog](https://snarky.ca/).
 
-[1]: https://rustyelectron.live
-[2]: https://jekyllrb.com/docs/installation/#requirements
-[3]: https://wiki.archlinux.org/title/ruby#Setup
-[4]: https://jekyllrb.com/docs/github-pages/
-[5]: http://jemdoc.jaboc.net/
